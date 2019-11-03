@@ -1,0 +1,223 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <canvas id="myCanvas" width="500" height="500" style="border:3px solid #0000CC;">
+        </canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.strokeStyle = "darkblue";
+            ctx.lineWidth = 5;
+            ctx.strokeRect(40, 40, 120, 120);
+            //ctx.strokeRect(x,y,w,h);
+            ctx.beginPath();
+            ctx.arc(100, 100, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.fillStyle = "red";
+            ctx.fill();
+
+            var d = document.getElementById("myCanvas");
+            var dtx = c.getContext("2d");
+            dtx.strokeStyle = "darkblue";
+            dtx.lineWidth = 5;
+            ctx.strokeRect(240, 40, 120, 120);
+            //ctx.strokeRect(x,y,w,h);
+            dtx.beginPath();
+            dtx.arc(270, 100, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            dtx.closePath();
+            dtx.stroke();
+            dtx.fillStyle = "red";
+            dtx.fill();
+
+            dtx.beginPath();
+            dtx.arc(330, 100, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            dtx.closePath();
+            dtx.stroke();
+            dtx.fillStyle = "red";
+            dtx.fill();
+
+            var e = document.getElementById("myCanvas");
+            var etx = c.getContext("2d");
+            etx.strokeStyle = "darkblue";
+            etx.lineWidth = 5;
+            etx.strokeRect(40, 200, 120, 120);
+            //ctx.strokeRect(x,y,w,h);
+            etx.beginPath();
+            etx.arc(70, 230, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            etx.closePath();
+            etx.stroke();
+            etx.fillStyle = "red";
+            etx.fill();
+            etx.beginPath();
+            etx.arc(100, 260, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            etx.closePath();
+            etx.stroke();
+            etx.fillStyle = "red";
+            etx.fill();
+
+            etx.beginPath();
+            etx.arc(139, 290, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            etx.closePath();
+            etx.stroke();
+            etx.fillStyle = "red";
+            etx.fill();
+
+            var f = document.getElementById("myCanvas");
+            var ftx = c.getContext("2d");
+            ftx.strokeStyle = "darkblue";
+            ftx.lineWidth = 5;
+            ftx.strokeRect(240, 200, 120, 120);
+            //ctx.strokeRect(x,y,w,h);
+            ftx.beginPath();
+            ftx.arc(270, 230, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            ftx.closePath();
+            ftx.stroke();
+            ftx.fillStyle = "red";
+            ftx.fill();
+            ftx.beginPath();
+
+            ftx.arc(270, 290, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            ftx.closePath();
+            ftx.stroke();
+            ftx.fillStyle = "red";
+            ftx.fill();
+
+            ftx.beginPath();
+            ftx.arc(330, 230, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            ftx.closePath();
+            ftx.stroke();
+            ftx.fillStyle = "red";
+            ftx.fill();
+            ftx.beginPath();
+
+            ftx.arc(330, 290, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            ftx.closePath();
+            ftx.stroke();
+            ftx.fillStyle = "red";
+            ftx.fill();
+
+            var g = document.getElementById("myCanvas");
+            var gtx = c.getContext("2d");
+            gtx.strokeStyle = "darkblue";
+            gtx.lineWidth = 5;
+            gtx.strokeRect(40, 360, 120, 120);
+            //ctx.strokeRect(x,y,w,h);
+            gtx.beginPath();
+            gtx.arc(70, 390, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            ftx.closePath();
+            ftx.stroke();
+            ftx.fillStyle = "red";
+            ftx.fill();
+            ftx.beginPath();
+
+            gtx.arc(130, 390, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            gtx.closePath();
+            gtx.stroke();
+            gtx.fillStyle = "red";
+            gtx.fill();
+
+            gtx.beginPath();
+            gtx.arc(70, 450, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            gtx.closePath();
+            gtx.stroke();
+            gtx.fillStyle = "red";
+            gtx.fill();
+
+            gtx.beginPath();
+            gtx.arc(130, 450, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            gtx.closePath();
+            gtx.stroke();
+            gtx.fillStyle = "red";
+            gtx.fill();
+
+            gtx.beginPath();
+            gtx.arc(100, 420, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            gtx.closePath();
+            gtx.stroke();
+            gtx.fillStyle = "red";
+            gtx.fill();
+
+            var h = document.getElementById("myCanvas");
+            var htx = c.getContext("2d");
+            htx.strokeStyle = "darkblue";
+            htx.lineWidth = 5;
+            htx.strokeRect(240, 360, 120, 120);
+            //ctx.strokeRect(x,y,w,h);
+            htx.beginPath();
+            htx.arc(270, 390, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            ftx.closePath();
+            ftx.stroke();
+            ftx.fillStyle = "red";
+            ftx.fill();
+            ftx.beginPath();
+
+            gtx.arc(270, 420, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            gtx.closePath();
+            gtx.stroke();
+            gtx.fillStyle = "red";
+            gtx.fill();
+
+            gtx.beginPath();
+            gtx.arc(270, 450, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            gtx.closePath();
+            gtx.stroke();
+            gtx.fillStyle = "red";
+            gtx.fill();
+
+            gtx.beginPath();
+            gtx.arc(330, 450, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            gtx.closePath();
+            gtx.stroke();
+            gtx.fillStyle = "red";
+            gtx.fill();
+
+            gtx.beginPath();
+            gtx.arc(330, 420, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            gtx.closePath();
+            gtx.stroke();
+            gtx.fillStyle = "red";
+            gtx.fill();
+
+            gtx.beginPath();
+            gtx.arc(330, 390, 5, 0, 2 * Math.PI); //
+            //center of circle X,Y, radius, start of radian, end of radian, direction);
+            gtx.closePath();
+            gtx.stroke();
+            gtx.fillStyle = "red";
+            gtx.fill();
+        </script>
+
+
+
+        </script>
+    </body>
+
+</html>

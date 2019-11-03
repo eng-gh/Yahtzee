@@ -1,0 +1,502 @@
+*
+{
+
+        margin: 0px;
+        padding: 0px
+
+}
+
+body
+{
+    width:800px;
+    background-color:#534b5054;
+    margin:  5px auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#mainboard
+{
+ 
+    border-radius: 10px;
+    width:750px;
+    height: 580px;
+    background-color: #58823c;
+    border:2px solid white;
+    box-shadow: 0 0 5px 4px rgba(0, 140, 186, 0.5);
+    display: grid; 
+    grid-gap: 1px 1px;
+    text-align: center;
+}
+#player1board
+{
+    width: 550px;
+    height: 290px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#player2board {
+
+    width: 550px;
+    height: 290px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#ResaultTable {
+    width: 200px;
+    height: 580px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding:5px;
+}
+#ResultTable1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    border:1px solid black;
+    background-color: seashell;
+}
+.dicecontainer
+{
+
+    width: 52px;
+    height: 52px;
+    border-radius: 3px;
+    border: 1px solid rgb(20, 18, 18);
+    background-color: #a5c490;
+    cursor: pointer;
+}
+
+.dice1
+{
+    background-image: url("images/dice/1.png");
+}
+.dice2
+{
+    background-image: url("images/dice/2.png");
+}
+.dice3
+{
+    background-image: url("images/dice/3.png");
+}
+.dice4
+{
+    background-image: url("images/dice/4.png");
+}
+.dice5
+{
+    background-image: url("images/dice/5.png");
+}
+.dice6
+{
+    background-image: url("images/dice/6.png");
+}
+
+
+/*************************** Player1 Style sheet ******************/
+#player1image
+{
+    width: 60px;
+    height: 60px;
+
+    float: left;
+    top:10px;
+    left:220px;
+    position: relative;
+    
+}
+
+#player1table
+{
+    float: left;
+    top:20px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    align-items:center; 
+    justify-content:space-around;
+}
+#player1Roll
+{
+    position: relative;
+    width: 100%;
+    float: left;
+    top:25px;
+}
+#player1random
+{
+    background-color: dodgerblue;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    float: left;
+    top:20px;
+}
+
+.pr11click
+{
+    position: relative;
+    left:28px;
+    top:80px;
+    transform: rotate(0);
+    transition: all 0.3s ease;
+}
+
+.pr11
+{
+position: relative;
+left:28px;
+top:200px;
+transform: rotate(-45deg);
+transition: all 0.3s ease;
+}
+
+.pr12click
+{
+position: relative;
+left:139px;
+top:26px;
+transform: rotate(0);
+transition: all 0.3s ease;
+}
+.pr12
+{
+position: relative;
+left:150px;
+top:120px;
+transform: rotate(-30deg);
+transition: all 0.3s ease;
+}
+
+.pr13click
+{
+position: relative;
+left:249px;
+top:-28px;
+
+transform: rotate(0);
+transition: all 0.3s ease;
+}
+.pr13
+{
+position: relative;
+left:250px;
+top:80px;
+
+transform: rotate(-10deg);
+transition: all 0.3s ease;
+}
+.pr14click
+{
+    position: relative;
+    left:359px;
+    top:-81px;
+    transform: rotate(0);
+    transition: all 0.3s ease;
+
+}
+.pr14
+{
+    position: relative;
+    left:360px;
+    top:20px;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease;
+
+}
+.pr15click
+{
+position: relative;
+left:469px;
+top:-136px;
+float: left;
+transform: rotate(0);
+transition: all 0.3s ease;
+
+}
+.pr15
+{
+position: relative;
+left:440px;
+top:0px;
+float: left;
+transform: rotate(30deg);
+transition: all 0.3s ease;
+}
+
+/******************************* Player2 Style Sheet ************************/
+#player2table {
+    float: left;
+    top: 100px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#player2Roll {
+    position: relative;
+    width: 100%;
+    float: left;
+    top:7px;
+
+}
+
+#player2image {
+    width: 60px;
+    height: 60px;
+    float: left;
+    left: 220px;
+    right: 220px;
+    top: 220px;
+    position: relative;
+
+}
+
+
+
+.pr21click
+{
+
+    position: relative;
+    left: 28px;
+    top: 160px;
+    transform: rotate(0);
+    transition: all 0.3s ease;
+}
+
+.pr21 {
+    position: relative;
+    left: 28px;
+    top: 30px;
+
+transform: rotate(-45deg);
+transition: all 0.3s ease;
+}
+
+.pr22click
+{
+position: relative;
+left:139px;
+top:107px;
+transform: rotate(0);
+transition: all 0.3s ease;
+}
+.pr22
+{
+position: relative;
+left:150px;
+top:20px;
+transform: rotate(-30deg);
+transition: all 0.3s ease;
+}
+
+.pr23click
+{
+position: relative;
+left:249px;
+top:52px;
+
+transform: rotate(0);
+transition: all 0.3s ease;
+}
+
+
+.pr23 {
+    position: relative;
+    left: 250px;
+    top: -50px;
+
+    transform: rotate(-10deg);
+    transition: all 0.3s ease;
+}
+
+.pr24click {
+    position: relative;
+    left: 359px;
+    top: -1px;
+    transform: rotate(0);
+    transition: all 0.3s ease;
+
+}
+
+.pr24 {
+    position: relative;
+    left: 360px;
+    top: -120px;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease;
+
+}
+
+.pr25click
+{
+position: relative;
+left:469px;
+top:-57px;
+float: left;
+transform: rotate(0);
+transition: all 0.3s ease;
+
+}
+.pr25
+{
+position: relative;
+left:440px;
+top:-190px;
+float: left;
+transform: rotate(30deg);
+transition: all 0.3s ease;
+}
+
+
+#P1roll,#P0roll
+{
+    background-color: #ff0000;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#P1roll:hover,#P0roll:hover
+{
+    background-color:#4CAF50;
+
+}
+#P1roll:disabled,#P0roll:disabled
+{
+    background-color: rosybrown;
+    cursor:none;
+
+}
+
+.Resaultcsstrue
+{
+  
+    color: black;
+}
+.Resaultcssfalse
+{
+
+    color: red;
+    cursor: pointer;
+}
+
+.Resaultcss
+{
+    font-size: 12px;
+    color: red;
+    cursor: pointer;
+}
+
+
+/********************* Avatar Style Sheet *****/
+.avatar1
+{
+    background-image: url(images/p1.png);
+}
+
+.avatar2
+{
+    background-image: url(images/p2.png);
+}
+
+.avatar3
+{
+    background-image: url(images/p3.png);
+}
+
+.avatar4
+{
+    background-image: url(images/p4.png);
+}
+
+.avatar5
+{
+    background-image: url(images/p5.png);
+}
+.avatar6
+{
+    background-image: url(images/p6.png);
+}
+.avatarPic
+{
+    margin: 3px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.true
+{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    opacity: 0.7;
+    border: 1px solid #000;
+    
+}
+
+.false
+{
+    cursor: pointer;
+}
+
+/***************************** Player Login Style Sheet */
+.playercontainer
+{
+    height: 350px;
+    width: 800px;
+    border-radius: 20px;
+    padding: 5px;
+
+}
+.player1container
+{
+    margin: 3px;
+    padding: 5px;
+    width: 800px;
+    height: 150px;
+    border-radius: 20px;
+    border: 1px solid rgb(212, 126, 126);
+
+}
+legend
+{
+    font-weight: 600;
+    color: brown;
+    margin: 5px;
+}
+.player1container .playername
+{
+    height: 50px;
+
+}
+.player1container .playername input
+{
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.playersubmit
+{
+    width: 800px;
+    height: 50pxd;
+}
